@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312">
+<!DOCTYPE 商品列表[
+<!ELEMENT 商品编号 (#PCDATA)>
+<!ELEMENT 商品名 (#PCDATA)>
+<!ELEMENT 产地 (#PCDATA)>                                                                                                          
+<!ELEMENT 出厂日期 (#PCDATA)>
+<!ELEMENT 商品 (商品编号,商品名,产地,出厂日期)>
+<!ELEMENT商品列表(商品+)>
+<!ATTLIST商品 分类 CDATA #REQUIRED> 
+]>

@@ -1,0 +1,13 @@
+	<?xml version="1.0"?>
+	<Schema name="mySchema" xmlns:="urn:schemas-microsoft-com:xml-data"
+		xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="姓名" content="textonly" dt:type="string"/>
+	<ElementType name="联系电话" content="textonly" dt:type="string"/>
+	<ElementType name="职工" content="eltOnly" order="seq">
+	<element type="姓名"/>
+	<element type="联系电话" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="职工列表" content="eltOnly">
+	<element type="职工" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	</Schema>
